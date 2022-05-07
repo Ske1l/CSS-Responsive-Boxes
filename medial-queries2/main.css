@@ -1,3 +1,100 @@
 body {
   background: papayawhip;
 }
+
+* {
+  border: 1px solid mediumvioletred;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 100vh;
+
+}
+
+.container div {
+  margin: 10px
+}
+
+.a {
+  width: 100%;
+  order: 1;
+}
+
+.b {
+  width: 60%;
+  order: 2;
+}
+
+.c {
+  width: 20%;
+  order: 4;
+  max-height: 200px;
+}
+
+.d {
+  width: 20%;
+  order: 5;
+  max-height: 200px;
+}
+
+.e {
+  width: 20%;
+  order: 6;
+  max-height: 200px;
+}
+
+.f {
+  width: 30%;
+  order: 3;
+}
+
+@media (max-width:600px) {
+  .a {
+    /* flex-grow: 2; */
+    width: 100%;
+    order: 1;
+    height: 15vh;
+  }
+
+  .b {
+    /* flex-grow: 6; */
+    width: 100%;
+    order: 2;
+    height: 40vh;
+  }
+
+  .c {
+    /* flex-grow: 2; */
+    width: 25%;
+    order: 3;
+    max-height: 200px;
+    height: 10vh;
+  }
+
+  .d {
+    /* flex-grow: 2; */
+    width: 25%;
+    order: 4;
+    max-height: 200px;
+    height: 10vh;
+  }
+
+  .e {
+    /* flex-grow: 2; */
+    width: 25%;
+    order: 5;
+    max-height: 200px;
+    height: 10vh;
+  }
+
+  .f {
+    /* flex-grow: 2; */
+    width: 100%;
+    order: 6;
+    height: 15vh;
+  }
+}
